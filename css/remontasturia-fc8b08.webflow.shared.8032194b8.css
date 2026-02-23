@@ -6,6 +6,11 @@ html {
 
 body {
   margin: 0;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -126,8 +131,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 input {
-  line-height: normal;
+  line-height: normal; 
 }
+
 
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
@@ -153,6 +159,7 @@ legend {
 
 textarea {
   overflow: auto;
+  resize: vertical;
 }
 
 optgroup {
@@ -1630,6 +1637,7 @@ textarea.w-input, textarea.w-select {
 }
 
 @media (min-width: 768px) {
+  
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
@@ -2234,6 +2242,30 @@ textarea.w-input, textarea.w-select {
   color: #1a1b1fbf;
 }
 
+
+.form-input {
+  background: #fff;
+  /* border: none; */
+  border-radius: 0;
+  border: 1px solid #fff;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 12px 25px;
+  transition: all .2s;
+}
+
+.form-input:focus, .form-input:hover {
+
+  /* background: #f3f3f3; */
+  border-bottom: 1px solid #000;
+}
+
+.form-input:focus {
+  border: 1px solid #000;
+}
+
 .button-primary {
   color: #fff;
   letter-spacing: 2px;
@@ -2299,7 +2331,7 @@ textarea.w-input, textarea.w-select {
   position: static;
 }
 
-.section.secondary-background {
+.secondary-background {
   background-color: #e7ecf1;
 }
 
@@ -2533,6 +2565,8 @@ textarea.w-input, textarea.w-select {
 }
 
 .vflex {
+  display: flex;
+  flex-direction: column;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   width: 100%;
@@ -3014,6 +3048,7 @@ textarea.w-input, textarea.w-select {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   display: flex;
+  
 }
 
 .hflex.price-title-block {
@@ -3072,6 +3107,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .navbar-logo-left-container.shadow-three {
     height: 80px;
     padding-left: 40px;
