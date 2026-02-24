@@ -50,7 +50,7 @@
                     <div class="title bold margin-bottom-1-rem animate-slide-up">Звʼязатись з нами</div>
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <div class="vflex">
-                            <input class="form-input" type="hidden" name="access_key" value="$W3FORM_ACCESS_KEY">
+                            <input class="form-input" type="hidden" name="access_key" value="${{ secrets.W3FORM_ACCESS_KEY }}">
                             <input class="form-input" type="text" placeholder="Напишіть своє імʼя" name="name" required>
                             <input class="form-input" type="phone" placeholder="Напишіть свій номер телефону" name="phone" required>
                             <input class="form-input" type="email" placeholder="Напишіть свою пошту" name="email">
@@ -60,7 +60,7 @@
                     </form>
                 </div>
                 <div class="w-layout-blockcontainer w-container">
-                    <div class="vflex">
+                    <div class="section vflex">
                         <div class="paragraph bold all-caps">Зателефонувати</div>
                         <ul>
                             <li><a href="tel:+44999999999" class="paragraph animate-slide-in-left link">+44999999999</a>
